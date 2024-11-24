@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <img
+        src="logo/logo.png"
+        alt="Logotipo loja virtual" 
+        class="logo"
+      />
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre-nos">Sobre nós</a>
+        <a href="#contato">Contato</a>
+        <a href="#carrinho">Carrinho</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar produtos..." />
+      </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+      <!-- Banner Promocional -->
+      <section class="banner" id="inicio">
+        <h1>Descontos de 20% em todos os produtos!</h1>
+        <p>Não perca essa oportunidade. Confira agora!</p>
+      </section>
+
+      <!-- Filtros e Produtos -->
+      <section class="product-section" id="produtos">
+        <div class="filters">
+          <label for="category">Categoria:</label>
+          <select id="category">
+            <option>Todos</option>
+            <option>Eletrônicos</option>
+            <option>Roupas</option>
+            <option>Acessórios</option>
+          </select>
+
+          <label for="price">Preço:</label>
+          <select id="price">
+            <option>Todos</option>
+            <option>Menor que R$50</option>
+            <option>R$50 - R$200</option>
+            <option>Acima de R$200</option>
+          </select>
+        </div>
+
+        <!-- Produtos em Destaque -->
+        <div class="product-cards">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 1" />
+            <h3>Produto 1</h3>
+            <p>Descrição breve do produto 1.</p>
+            <p><strong>R$ 100,00</strong></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 2" />
+            <h3>Produto 2</h3>
+            <p>Descrição breve do produto 2.</p>
+            <p><strong>R$ 150,00</strong></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Produto 3" />
+            <h3>Produto 3</h3>
+            <p>Descrição breve do produto 3.</p>
+            <p><strong>R$ 200,00</strong></p>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Endereço: Rua Fictícia, 123 - Cidade Imaginária</p>
+      <p>Telefone: (00) 1234-5678 | E-mail: contato@lojavirtual.com</p>
+    </footer>
+  </body>
+</html>
